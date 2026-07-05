@@ -1,0 +1,587 @@
+{
+  "agents": [
+    "claude",
+    "openai"
+  ],
+  "agent_labels": {
+    "claude": "claude-opus-4-8",
+    "openai": "gpt-5.4"
+  },
+  "agent_stats": {
+    "claude": {
+      "agent": "claude",
+      "agent_label": "claude-opus-4-8",
+      "total_trials": 60,
+      "overall_pass_rate": 0.95,
+      "overall_pass_ci_95": [
+        0.8629948352365147,
+        0.9828504978356043
+      ],
+      "overall_score_mean": 0.9408333333333334,
+      "overall_score_std": 0.21890553389158893,
+      "task_stats": {
+        "T1": {
+          "task_id": "T1",
+          "task_name": "EPS Extraction - Apple 10-K FY2025",
+          "tier": 1,
+          "grader_type": "exact",
+          "n_trials": 10,
+          "pass_rate": 1.0,
+          "pass_rate_ci_95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "score_mean": 1.0,
+          "score_std": 0.0,
+          "score_ci_95": [
+            NaN,
+            NaN
+          ],
+          "avg_turns": 2.0,
+          "avg_latency_ms": 6472.0,
+          "n_tool_calls": 1.0,
+          "n_agent_errors": 0,
+          "failures": []
+        },
+        "T2": {
+          "task_id": "T2",
+          "task_name": "Revenue CAGR: Microsoft FY2021 - FY2023",
+          "tier": 1,
+          "grader_type": "tolerance",
+          "n_trials": 10,
+          "pass_rate": 1.0,
+          "pass_rate_ci_95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "score_mean": 1.0,
+          "score_std": 0.0,
+          "score_ci_95": [
+            NaN,
+            NaN
+          ],
+          "avg_turns": 2.0,
+          "avg_latency_ms": 6274.8,
+          "n_tool_calls": 1.0,
+          "n_agent_errors": 0,
+          "failures": []
+        },
+        "T3": {
+          "task_id": "T3",
+          "task_name": "Debt-to-Equity Ratio - Meta Platforms Q4 2023",
+          "tier": 2,
+          "grader_type": "tolerance",
+          "n_trials": 10,
+          "pass_rate": 0.7,
+          "pass_rate_ci_95": [
+            0.39677814746114537,
+            0.8922087325936989
+          ],
+          "score_mean": 0.7,
+          "score_std": 0.4830458915396479,
+          "score_ci_95": [
+            NaN,
+            NaN
+          ],
+          "avg_turns": 2.0,
+          "avg_latency_ms": 6545.8,
+          "n_tool_calls": 1.0,
+          "n_agent_errors": 0,
+          "failures": [
+            {
+              "trial": 5,
+              "score": 0.0,
+              "answer_preview": "## Debt-to-Equity Ratio \u2014 Meta Platforms (Dec 31, 2023)\n\n**Formula:**\n$$\\text{Debt-to-Equity} = \\frac{\\text{Total Liabilities}}{\\text{Total Stockholders' Equity}}$$\n\n**Calculation:**\n$$\\frac{\\$67,364}",
+              "explanation": "Got 0.44 ratio, expected 0.055 ratio (error 700.00%, tolerance 5.0%)"
+            },
+            {
+              "trial": 8,
+              "score": 0.0,
+              "answer_preview": "## Answer\n\n**Debt-to-Equity Ratio = 0.440**\n\n### Calculation\n\n$$\\text{Debt-to-Equity} = \\frac{\\text{Total Liabilities}}{\\text{Total Stockholders' Equity}} = \\frac{\\$67,364}{\\$153,168} = 0.440$$\n\n### N",
+              "explanation": "Got 0.44 ratio, expected 0.055 ratio (error 700.00%, tolerance 5.0%)"
+            },
+            {
+              "trial": 9,
+              "score": 0.0,
+              "answer_preview": "## Debt-to-Equity Ratio \u2014 Meta Platforms (Dec 31, 2023)\n\n**Formula:** Total Liabilities \u00f7 Total Stockholders' Equity\n\n**Calculation:**\n$$\\frac{\\$67,364}{\\$153,168} = 0.4398$$\n\n### **Answer: 0.440**\n\nT",
+              "explanation": "Got 0.44 ratio, expected 0.055 ratio (error 700.00%, tolerance 5.0%)"
+            }
+          ]
+        },
+        "T4": {
+          "task_id": "T4",
+          "task_name": "Bond duration calculation",
+          "tier": 2,
+          "grader_type": "tolerance",
+          "n_trials": 10,
+          "pass_rate": 1.0,
+          "pass_rate_ci_95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "score_mean": 1.0,
+          "score_std": 0.0,
+          "score_ci_95": [
+            NaN,
+            NaN
+          ],
+          "avg_turns": 6.0,
+          "avg_latency_ms": 22477.7,
+          "n_tool_calls": 7.1,
+          "n_agent_errors": 0,
+          "failures": []
+        },
+        "T5": {
+          "task_id": "T5",
+          "task_name": "Free Cash Flow Quality Analysis - Alphabet FY2023",
+          "tier": 3,
+          "grader_type": "llm_rubric",
+          "n_trials": 10,
+          "pass_rate": 1.0,
+          "pass_rate_ci_95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "score_mean": 0.9460000000000001,
+          "score_std": 0.029888682361946497,
+          "score_ci_95": [
+            NaN,
+            NaN
+          ],
+          "avg_turns": 2.0,
+          "avg_latency_ms": 15846.2,
+          "n_tool_calls": 5.4,
+          "n_agent_errors": 0,
+          "failures": []
+        },
+        "T6": {
+          "task_id": "T6",
+          "task_name": "Gross Margin Comparison - FAANG 2023",
+          "tier": 3,
+          "grader_type": "llm_rubric",
+          "n_trials": 10,
+          "pass_rate": 1.0,
+          "pass_rate_ci_95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "score_mean": 0.999,
+          "score_std": 0.003162277660168382,
+          "score_ci_95": [
+            NaN,
+            NaN
+          ],
+          "avg_turns": 2.0,
+          "avg_latency_ms": 11907.2,
+          "n_tool_calls": 4.0,
+          "n_agent_errors": 0,
+          "failures": []
+        }
+      },
+      "tier_summary": {
+        "1": {
+          "tier": 1,
+          "tier_label": "Easy",
+          "tasks": [
+            "T1",
+            "T2"
+          ],
+          "n_trials": 20,
+          "pass_rate": 1.0,
+          "score_mean": 1.0,
+          "score_std": 0.0
+        },
+        "2": {
+          "tier": 2,
+          "tier_label": "Medium",
+          "tasks": [
+            "T3",
+            "T4"
+          ],
+          "n_trials": 20,
+          "pass_rate": 0.85,
+          "score_mean": 0.85,
+          "score_std": 0.36634754853252327
+        },
+        "3": {
+          "tier": 3,
+          "tier_label": "Hard",
+          "tasks": [
+            "T5",
+            "T6"
+          ],
+          "n_trials": 20,
+          "pass_rate": 1.0,
+          "score_mean": 0.9724999999999999,
+          "score_std": 0.03416292234510821
+        }
+      },
+      "failure_modes": [
+        {
+          "category": "Calculation Error",
+          "count": 3,
+          "examples": [
+            {
+              "task_id": "T3",
+              "trial": 5,
+              "score": 0.0,
+              "explanation": "Got 0.44 ratio, expected 0.055 ratio (error 700.00%, tolerance 5.0%)"
+            },
+            {
+              "task_id": "T3",
+              "trial": 8,
+              "score": 0.0,
+              "explanation": "Got 0.44 ratio, expected 0.055 ratio (error 700.00%, tolerance 5.0%)"
+            },
+            {
+              "task_id": "T3",
+              "trial": 9,
+              "score": 0.0,
+              "explanation": "Got 0.44 ratio, expected 0.055 ratio (error 700.00%, tolerance 5.0%)"
+            }
+          ]
+        }
+      ]
+    },
+    "openai": {
+      "agent": "openai",
+      "agent_label": "gpt-5.4",
+      "total_trials": 60,
+      "overall_pass_rate": 0.9333333333333333,
+      "overall_pass_ci_95": [
+        0.8407464268680283,
+        0.9737713012754938
+      ],
+      "overall_score_mean": 0.9308333333333335,
+      "overall_score_std": 0.21927686752771794,
+      "task_stats": {
+        "T1": {
+          "task_id": "T1",
+          "task_name": "EPS Extraction - Apple 10-K FY2025",
+          "tier": 1,
+          "grader_type": "exact",
+          "n_trials": 10,
+          "pass_rate": 1.0,
+          "pass_rate_ci_95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "score_mean": 1.0,
+          "score_std": 0.0,
+          "score_ci_95": [
+            NaN,
+            NaN
+          ],
+          "avg_turns": 1.0,
+          "avg_latency_ms": 862.9,
+          "n_tool_calls": 0.0,
+          "n_agent_errors": 0,
+          "failures": []
+        },
+        "T2": {
+          "task_id": "T2",
+          "task_name": "Revenue CAGR: Microsoft FY2021 - FY2023",
+          "tier": 1,
+          "grader_type": "tolerance",
+          "n_trials": 10,
+          "pass_rate": 1.0,
+          "pass_rate_ci_95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "score_mean": 1.0,
+          "score_std": 0.0,
+          "score_ci_95": [
+            NaN,
+            NaN
+          ],
+          "avg_turns": 2.0,
+          "avg_latency_ms": 1613.4,
+          "n_tool_calls": 1.0,
+          "n_agent_errors": 0,
+          "failures": []
+        },
+        "T3": {
+          "task_id": "T3",
+          "task_name": "Debt-to-Equity Ratio - Meta Platforms Q4 2023",
+          "tier": 2,
+          "grader_type": "tolerance",
+          "n_trials": 10,
+          "pass_rate": 1.0,
+          "pass_rate_ci_95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "score_mean": 1.0,
+          "score_std": 0.0,
+          "score_ci_95": [
+            NaN,
+            NaN
+          ],
+          "avg_turns": 2.0,
+          "avg_latency_ms": 2242.7,
+          "n_tool_calls": 1.0,
+          "n_agent_errors": 0,
+          "failures": []
+        },
+        "T4": {
+          "task_id": "T4",
+          "task_name": "Bond duration calculation",
+          "tier": 2,
+          "grader_type": "tolerance",
+          "n_trials": 10,
+          "pass_rate": 0.7,
+          "pass_rate_ci_95": [
+            0.39677814746114537,
+            0.8922087325936989
+          ],
+          "score_mean": 0.7,
+          "score_std": 0.4830458915396479,
+          "score_ci_95": [
+            NaN,
+            NaN
+          ],
+          "avg_turns": 7.7,
+          "avg_latency_ms": 9972.0,
+          "n_tool_calls": 12.5,
+          "n_agent_errors": 0,
+          "failures": [
+            {
+              "trial": 5,
+              "score": 0.0,
+              "answer_preview": "",
+              "explanation": "No answer returned"
+            },
+            {
+              "trial": 6,
+              "score": 0.0,
+              "answer_preview": "",
+              "explanation": "No answer returned"
+            },
+            {
+              "trial": 8,
+              "score": 0.0,
+              "answer_preview": "",
+              "explanation": "No answer returned"
+            }
+          ]
+        },
+        "T5": {
+          "task_id": "T5",
+          "task_name": "Free Cash Flow Quality Analysis - Alphabet FY2023",
+          "tier": 3,
+          "grader_type": "llm_rubric",
+          "n_trials": 10,
+          "pass_rate": 0.9,
+          "pass_rate_ci_95": [
+            0.5958499732047615,
+            0.9821237869049271
+          ],
+          "score_mean": 0.8940000000000001,
+          "score_std": 0.033065591380365994,
+          "score_ci_95": [
+            NaN,
+            NaN
+          ],
+          "avg_turns": 2.0,
+          "avg_latency_ms": 5905.4,
+          "n_tool_calls": 5.2,
+          "n_agent_errors": 0,
+          "failures": [
+            {
+              "trial": 7,
+              "score": 0.83,
+              "answer_preview": "Alphabet\u2019s FY2023 free cash flow (FCF) was **$69,495 million**, calculated explicitly as **$101,746 million operating cash flow - $32,251 million capital expenditures = $69,495 million**. That is a ve",
+              "explanation": "The student demonstrates strong technical proficiency with accurate FCF calculation, solid OCF-to-NI comparison, and good capex characterization, but loses points for omitting the shareholder dilution caveat on SBC and slightly exceeding the word count limit."
+            }
+          ]
+        },
+        "T6": {
+          "task_id": "T6",
+          "task_name": "Gross Margin Comparison - FAANG 2023",
+          "tier": 3,
+          "grader_type": "llm_rubric",
+          "n_trials": 10,
+          "pass_rate": 1.0,
+          "pass_rate_ci_95": [
+            0.7224672001371107,
+            0.9999999999999999
+          ],
+          "score_mean": 0.991,
+          "score_std": 0.00994428926011754,
+          "score_ci_95": [
+            NaN,
+            NaN
+          ],
+          "avg_turns": 2.0,
+          "avg_latency_ms": 4009.4,
+          "n_tool_calls": 4.0,
+          "n_agent_errors": 0,
+          "failures": []
+        }
+      },
+      "tier_summary": {
+        "1": {
+          "tier": 1,
+          "tier_label": "Easy",
+          "tasks": [
+            "T1",
+            "T2"
+          ],
+          "n_trials": 20,
+          "pass_rate": 1.0,
+          "score_mean": 1.0,
+          "score_std": 0.0
+        },
+        "2": {
+          "tier": 2,
+          "tier_label": "Medium",
+          "tasks": [
+            "T3",
+            "T4"
+          ],
+          "n_trials": 20,
+          "pass_rate": 0.85,
+          "score_mean": 0.85,
+          "score_std": 0.36634754853252327
+        },
+        "3": {
+          "tier": 3,
+          "tier_label": "Hard",
+          "tasks": [
+            "T5",
+            "T6"
+          ],
+          "n_trials": 20,
+          "pass_rate": 0.95,
+          "score_mean": 0.9424999999999999,
+          "score_std": 0.055143353848711545
+        }
+      },
+      "failure_modes": [
+        {
+          "category": "Truncated / Empty Answer",
+          "count": 3,
+          "examples": [
+            {
+              "task_id": "T4",
+              "trial": 5,
+              "score": 0.0,
+              "explanation": "No answer returned"
+            },
+            {
+              "task_id": "T4",
+              "trial": 6,
+              "score": 0.0,
+              "explanation": "No answer returned"
+            },
+            {
+              "task_id": "T4",
+              "trial": 8,
+              "score": 0.0,
+              "explanation": "No answer returned"
+            }
+          ]
+        },
+        {
+          "category": "Partial Credit - Rubric Gaps",
+          "count": 1,
+          "examples": [
+            {
+              "task_id": "T5",
+              "trial": 7,
+              "score": 0.83,
+              "explanation": "The student demonstrates strong technical proficiency with accurate FCF calculation, solid OCF-to-NI comparison, and good capex characterization, but loses points for omitting the shareholder dilution"
+            }
+          ]
+        }
+      ]
+    }
+  },
+  "head_to_head": [
+    {
+      "task_id": "T1",
+      "task_name": "EPS Extraction - Apple 10-K FY2025",
+      "tier": 1,
+      "grader_type": "exact",
+      "claude_pass_rate": 1.0,
+      "claude_score_mean": 1.0,
+      "claude_score_std": 0.0,
+      "openai_pass_rate": 1.0,
+      "openai_score_mean": 1.0,
+      "openai_score_std": 0.0,
+      "winner": "tie",
+      "margin": 0.0
+    },
+    {
+      "task_id": "T2",
+      "task_name": "Revenue CAGR: Microsoft FY2021 - FY2023",
+      "tier": 1,
+      "grader_type": "tolerance",
+      "claude_pass_rate": 1.0,
+      "claude_score_mean": 1.0,
+      "claude_score_std": 0.0,
+      "openai_pass_rate": 1.0,
+      "openai_score_mean": 1.0,
+      "openai_score_std": 0.0,
+      "winner": "tie",
+      "margin": 0.0
+    },
+    {
+      "task_id": "T3",
+      "task_name": "Debt-to-Equity Ratio - Meta Platforms Q4 2023",
+      "tier": 2,
+      "grader_type": "tolerance",
+      "claude_pass_rate": 0.7,
+      "claude_score_mean": 0.7,
+      "claude_score_std": 0.4830458915396479,
+      "openai_pass_rate": 1.0,
+      "openai_score_mean": 1.0,
+      "openai_score_std": 0.0,
+      "winner": "openai",
+      "margin": 0.3
+    },
+    {
+      "task_id": "T4",
+      "task_name": "Bond duration calculation",
+      "tier": 2,
+      "grader_type": "tolerance",
+      "claude_pass_rate": 1.0,
+      "claude_score_mean": 1.0,
+      "claude_score_std": 0.0,
+      "openai_pass_rate": 0.7,
+      "openai_score_mean": 0.7,
+      "openai_score_std": 0.4830458915396479,
+      "winner": "claude",
+      "margin": 0.3
+    },
+    {
+      "task_id": "T5",
+      "task_name": "Free Cash Flow Quality Analysis - Alphabet FY2023",
+      "tier": 3,
+      "grader_type": "llm_rubric",
+      "claude_pass_rate": 1.0,
+      "claude_score_mean": 0.9460000000000001,
+      "claude_score_std": 0.029888682361946497,
+      "openai_pass_rate": 0.9,
+      "openai_score_mean": 0.8940000000000001,
+      "openai_score_std": 0.033065591380365994,
+      "winner": "claude",
+      "margin": 0.052
+    },
+    {
+      "task_id": "T6",
+      "task_name": "Gross Margin Comparison - FAANG 2023",
+      "tier": 3,
+      "grader_type": "llm_rubric",
+      "claude_pass_rate": 1.0,
+      "claude_score_mean": 0.999,
+      "claude_score_std": 0.003162277660168382,
+      "openai_pass_rate": 1.0,
+      "openai_score_mean": 0.991,
+      "openai_score_std": 0.00994428926011754,
+      "winner": "tie",
+      "margin": 0.008
+    }
+  ]
+}

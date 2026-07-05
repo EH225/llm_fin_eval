@@ -130,7 +130,7 @@ Fiscal Year 2023 (ended June 30, 2023):
         tier=2,
         prompt=(
             "Using Meta Platforms' balance sheet as of December 31, 2023, "
-            "calculate the debt-to-equity ratio. Round to two decimal places. "
+            "calculate the debt-to-equity ratio. Round to three decimal places. "
             "See below for the relevant data extracted for you to reference."
             "Please only provide 1 answer, your primary answer."
         ),
