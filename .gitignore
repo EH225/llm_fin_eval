@@ -1,0 +1,6 @@
+*__pycache__*
+*.docx
+*.tmp
+*github_keys/
+*scratch/
+*.ipynb_checkpoints/
