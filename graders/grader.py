@@ -158,23 +158,21 @@ class RangeGrader:
             return GradeResult(
                 0.0, False, None,
                 f"Could not extract a number from: '{answer[:120]}'",
-                "range"
-            )
+                "range")
 
         if lo <= extracted <= hi:
             return GradeResult(
                 1.0, True, extracted,
                 f"Got {extracted}, within range [{lo}, {hi}]",
-                "range"
-            )
+                "range")
+
         else:
             dist = min(abs(extracted - lo), abs(extracted - hi))
             score = max(0.0, 1.0 - dist / (hi - lo))
             return GradeResult(
                 score, False, extracted,
                 f"Got {extracted}, outside range [{lo}, {hi}] (distance {dist:.1f})",
-                "range"
-            )
+                "range")
 
 
 ### Grader 4: LLM Rubric ###
@@ -248,18 +246,10 @@ class LLMRubricGrader:
             passed = total >= pass_threshold
             score = total / max_score
 
-            return GradeResult(
-                score, passed, result,
-                result.get("summary", ""),
-                "llm_rubric"
-            )
+            return GradeResult(score, passed, result, result.get("summary", ""), "llm_rubric")
 
         except Exception as e:
-            return GradeResult(
-                0.0, False, None,
-                f"LLM grader error: {e}",
-                "llm_rubric"
-            )
+            return GradeResult(0.0, False, None, f"LLM grader error: {e}", "llm_rubric")
 
 
 ### Factory ###
