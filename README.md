@@ -1,14 +1,17 @@
 # LLM Agent Performance Evaluation on Financial Analysis Tasks
 This repository contains code for a comparative performance analysis of LLM agents on a small set of financial analysis tasks. Below is a quick summary of the repo layout:
-- `agents`: This folder contains code used to call the OpenAI and Anthropic APIs to process queries.
+- `tasks`: This folder contains code that outlines the tasks given to each agent in this study and also outlines the expected answers. 
+- `agents`: This folder contains code used to call the OpenAI and Anthropic APIs to process queries and run experiments.
+-`runner.py` - This module is the main driver of the project and is where the experiments are run from.
+
+- `analyze.py`: This module creates a performance summary JSON from the results cached to results and saved the new summary there as well. 
+
+
 - `grader`: This folder contains code for performing automated evaluation of agent performance.
 - `reports`: This folder contains HTML summaries of the study results.
 - `results`: This folder contains cached JSON files detailing the results from each trial of each task.
-- `tasks`: This folder contains code the outlines the tasks given to each agent in this study and also the expected answers. 
-- `analyze.py`: This module creates a performance summary JSON from the results cached to results and saved the new summary there as well. 
 - `dashboard.py`: This module summaries the information contained in the summary output from `analyze.py` into a readable HTML document and saves it to the `reports` folder.
 - `environment.yml` - This file outlines the requirements of the conda env used to run the experiments of this project.
--`runner.py` - This module is the main driver of the project and is where the experiments are run from.
 
 ## Abstract
 
